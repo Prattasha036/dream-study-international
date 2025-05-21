@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .btn-effect {
+    @apply flex h-10 w-[26] items-center justify-center rounded-md bg-gradient-to-tr from-blue-500 to-blue-700  hover:from-blue-600 hover:to-blue-800 transition p-4;
+  }
+  .btn-span {
+    @apply animate-typing
+            overflow-hidden
+            whitespace-nowrap
+            border-r-4
+            border-r-white
+            pr-2
+            text-sm
+            text-white;
+  }
+
+  .navhover {
+    @apply text-lg font-medium  hover:text-blue-500;
+  }
+
+  .a-compo {
+    @apply block px-4 py-2 hover:bg-gray-100;
+  }
+
+  .border {
+    @apply box-border border-x-2 h-12 w-32 border-white;
+  }
+
+  .card {
+    @apply shadow-md p-6 hover:border-b-4 hover:border-indigo-700 hover:bg-white hover:scale-100 hover:shadow-lg hover:translate-y-1  hover:shadow-gray-500 hover:duration-300 hover:dark:bg-gray-800 hover:dark:shadow-gray-400;
+  }
+}
+
+@layer utilities {
+  .layoutbg-color {
+    @apply bg-[#0d0744];
+  }
+
+  .small-text {
+    @apply text-[14px];
+  }
+
+  .text-color {
+    @apply text-blue-800;
+  }
+
+  .mouse-effect {
+    @apply hover:cursor-pointer;
+  }
+}
